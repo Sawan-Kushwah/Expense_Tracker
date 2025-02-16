@@ -4,18 +4,26 @@
 The **Expense Tracker App** is a full-stack web application that helps users manage their expenses efficiently. It allows users to **track spending, categorize expenses, set budgets, and visualize data** through interactive charts. Built with **Next.js, MongoDB, and Chart.js**, this app provides a seamless experience for managing finances.
 
 ## 🚀 Features
+- ✅ **Focus on sever side rendering for better seo**
+- ✅ **Tried to reuse the code as much as possible**
+- ✅ **Splited the code in several components**
+- ✅ **Logical data visualization**
 - ✅ **Add, Edit, and Delete Expenses**
 - ✅ **Categorize Expenses** (Clothes, Food, Travel, Game, Other)
 - ✅ **Monthly Category Budgets**
 - ✅ **Budget vs. Actual Expense Chart**
 - ✅ **Expense Summary Dashboard**
-- ✅ **Dark Mode Support**
+
+## 🛠️ Future Enhancements
+- 📌 **Pagination of expenses data both on server and client side**
+- 📌 **Focus on scalability**
+- 📌 **UI can be improved**
+- 📌 **Animation toaster for better user experience** 
 
 ## 🛠️ Tech Stack
 - **Frontend:** Next.js, Tailwind CSS
 - **Backend:** Next.js API Routes, MongoDB
 - **Database:** MongoDB with Mongoose
-- **State Management:** Redux Toolkit (if applicable)
 - **Charts & Visualization:** Chart.js
 
 ## 📦 Installation
@@ -62,11 +70,6 @@ Set environment variables in **Vercel Dashboard** → **Project Settings** → *
 - `DELETE /api/deleteExpense/:id` → Delete an expense
 - `PUT /api/updateExpense/:id` → Update an expense
 
-## 🛠️ Future Enhancements
-- 📌 **UI can be improved**
-- 📌 **Animation toaster for better user experience**
-- 📌 **Budgets set by user itself**
- 
 
 ## 🤝 Contributing
 Pull requests are welcome! If you’d like to contribute, please fork the repo and submit a PR.
