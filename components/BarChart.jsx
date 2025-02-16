@@ -4,8 +4,6 @@ import Chart from 'chart.js/auto';
 import { generateData, generateMonths } from '@/lib/utils';
 
 const BarChart = (data) => {
-    console.log(data)
-
     let expenseDataMonths = generateMonths(data)
     let expenseDataArray = generateData(data);
 

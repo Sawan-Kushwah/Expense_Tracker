@@ -7,8 +7,8 @@ const SummaryExpenseTable = (data) => {
     const expense = [...map1.values()];
     const total = totalExpense(data);
     let sortedData = getSortData(data);
-    if (category.length > 3) {
-        sortedData = sortedData.slice(3)
+    if (data.expenses.length > 5) {
+        sortedData = sortedData.slice(0, 5)
     }
     return (
         <div className="overflow-x-auto p-6">

@@ -12,14 +12,12 @@ const ExpenseForm = (expenceDetails) => {
     const { handleSubmit, register, formState: { errors }, reset, setValue } = useForm();
 
     const submit = async (data) => {
-        console.log(data)
         try {
             const response = await axios.post('/api/addExpense', data);
             if (response.status === 201) {
-                console.log(response.data.message)
+                reset()
+                router.push('/')
             }
-            reset()
-            router.push('/')
         } catch (error) {
             console.log(error.message)
         }
